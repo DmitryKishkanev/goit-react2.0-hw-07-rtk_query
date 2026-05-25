@@ -1,0 +1,38 @@
+.authNavBox {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.authNavButton {
+  display: inline-block;
+  padding: 8px 10px;
+
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+
+  color: var(--secondary-color);
+
+  transition:
+    transform var(--transition-time) var(--transition-type),
+    color var(--transition-time) var(--transition-type),
+    border-color var(--transition-time) var(--transition-type);
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.07);
+    color: var(--primary-background-color);
+    border-color: var(--primary-background-color);
+  }
+
+  &.active {
+    color: black;
+    background-color: var(--primary-background-color);
+    border: none;
+  }
+}

@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  width: 100%;
+  /* align-items: center; */
+  justify-content: space-between;
+  padding: 10px 20px;
+  /* margin-bottom: 30px; */
+  border-bottom: 1px solid black;
+}
+
+.appBarContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.headerTitle {
+  margin: 0;
+
+  transition: color var(--transition-time) var(--transition-type);
+
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    color: rgb(33, 150, 243);
+  }
+}
+
+.headerLink {
+  display: inline-block;
+
+  color: black;
+
+  transition:
+    transform var(--transition-time) var(--transition-type),
+    color var(--transition-time) var(--transition-type);
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.07);
+    color: rgb(33, 150, 243);
+  }
+
+  &.active {
+    color: black;
+  }
+}

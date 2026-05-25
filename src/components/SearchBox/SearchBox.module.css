@@ -1,0 +1,28 @@
+.searchBox {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 400px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+  outline: none;
+}
+
+.field {
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &:focus {
+    outline: none;
+  }
+}

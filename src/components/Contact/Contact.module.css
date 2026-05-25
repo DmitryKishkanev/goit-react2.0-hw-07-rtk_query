@@ -1,0 +1,35 @@
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 14px;
+  min-width: 430px;
+
+  box-shadow: var(--secondary-item-shadow);
+  border-radius: 4px;
+
+  transition: transform var(--transition-time) var(--transition-type);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.05);
+  }
+}
+
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactContent {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}

@@ -1,0 +1,49 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 530px;
+  padding: 15px;
+
+  border-radius: 4px;
+  box-shadow: var(--secondary-item-shadow);
+
+  & :focus {
+    outline: none;
+  }
+}
+
+.fieldBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+.field {
+  border-radius: 4px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.errorMessage {
+  color: red;
+}
+
+.formButton {
+  margin-left: auto;
+}
