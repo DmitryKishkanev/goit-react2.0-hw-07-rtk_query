@@ -14,8 +14,6 @@ export const register = createAsyncThunk(
       );
       // Запись token для всех последующих операций
       set(data.token);
-      // Сохраняем токен в localStorage
-      // localStorage.setItem('token', data.token);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.massage);
@@ -33,8 +31,6 @@ export const logIn = createAsyncThunk(
       );
       // Запись token для всех последующих операций
       set(data.token);
-      // Сохраняем токен в localStorage
-      // localStorage.setItem('token', data.token);
       return data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.massage);
@@ -47,8 +43,6 @@ export const logOut = createAsyncThunk('auth/logout', async (__, thunkAPI) => {
     await privateApiConnections.post('/users/logout');
     // Очищаем token после logOut
     unset();
-    // Удаляем токен из localStorage
-    // localStorage.removeItem('token');
   } catch (error) {
     return thunkAPI.rejectWithValue(error.massage);
   }
